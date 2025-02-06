@@ -1,6 +1,6 @@
 {
   "name": "depwise",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A CLI tool for evaluating the health of npm packages by fetching metadata, download stats, and GitHub data.",
   "type": "module",
   "main": "index.js",
