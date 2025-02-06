@@ -1,12 +1,39 @@
 {
   "name": "depwise",
   "version": "1.0.0",
-  "description": "",
+  "description": "A CLI tool for evaluating the health of npm packages by fetching metadata, download stats, and GitHub data.",
+  "type": "module",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcoshaber99/depwise"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "bin": {
+    "depwise": "./src/cli.js"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "npm",
+    "package",
+    "health",
+    "dependency",
+    "inspector",
+    "cli"
+  ],
+  "author": "Marco Haber",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "chalk": "^5.4.1",
+    "cli-table3": "^0.6.5",
+    "commander": "^13.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.7",
+    "@babel/preset-env": "^7.26.7",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0"
+  }
 }
